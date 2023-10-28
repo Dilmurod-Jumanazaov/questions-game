@@ -114,10 +114,6 @@ elInput.addEventListener("keyup", (evt) => {
       elQuestionText.textContent = questionsArr[0].question;
       elTableWrapper.style.display = "block";
       renderTable(questionsArr,elTable);
-      if(enterKeyCode == evt.keyCode) {
-        elTableWrapper.style.display = "none";
-        elQuestionText.textContent = questionsArr[0].question;
-      }
     }
     elInput.value = "";
   }
